@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2b7dca;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 10px;
+        }
+        nav ul li a {
+            color: #faf8f8;
+            text-decoration: none;
+        }
+        .search-bar {
+            text-align: center;
+            margin: 20px;
+        }
+        .search-bar input {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2b7dca;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+        .movie {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #dbd8d8;
+            border-radius: 5px;
+        }
+        .movie img {
+            width: 100px;
+            height: 150px;
+            border-radius: 5px;
+        }
+        .movie-info {
+            flex: 1;
+            margin-left: 20px;
+        }
+        .movie-info h3 {
+            margin: 0;
+        }
+        .movie-info p {
+            margin: 5px 0;
+        }
+        .book-btn {
+            background-color: #2b7dca;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .review {
+            background-color: #c5c4c4;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            
+        }
+        footer {
+            background-color: #2b7dca;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MovieBooking</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#upcoming">Upcoming</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for movies...">
+        <button>Search</button>
+    </div>
+    <div class="container" id="movies">
+        <h2>Now Showing</h2>
+        <div class="movie">
+            <img src="./pictures/transfromersone.png" alt="Movie 1">
+            <div class="movie-info">
+                <h3>Transformers One</h3>
+                <p>Genre: Action</p>
+                <p>Rating: 8.5/10</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="./pictures/stree2.png" alt="Movie 2">
+            <div class="movie-info">
+                <h3>Stree 2</h3>
+                <p>Genre: Comedy</p>
+                <p>Rating: 8/10</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="./pictures/joker.png" alt="Movie 3">
+            <div class="movie-info">
+                <h3>Movie Title 3</h3>
+                <p>Genre: Drama</p>
+                <p>Rating: 8.6/10</p>
+                <button class="book-btn">Book Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="upcoming">
+        <h2>Upcoming Movies</h2>
+        <div class="movie">
+            <img src="./pictures/bhoolbhulaiya.png" alt="Upcoming Movie 1">
+            <div class="movie-info">
+                <h3>Bhool Bhulaiyaa 3</h3>
+                <p>Genre: Sci-Fi</p>
+                <p>Release Date: 1-11-2024</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="./pictures/jigra.png" alt="Upcoming Movie 2">
+            <div class="movie-info">
+                <h3>Jigra</h3>
+                <p>Genre: Drama</p>
+                <p>Release Date: 11-10-2024</p>
+            </div>
+        </div>
+        <div class="movie">
+            <img src="./pictures/venom.png" alt="Upcoming Movie 3">
+            <div class="movie-info">
+                <h3>Venom:The last dance</h3>
+                <p>Genre: Action</p>
+                <p>Release Date: 25-10-2024</p>
+            </div>
+        </div>
+        </div>
+    <div class="container" id="reviews">
+        <h2>User Reviews</h2>
+        <div class="review">
+            <p><strong>Sharva:</strong> Great movie experience! Highly recommend.</p>
+        </div>
+        <div class="review">
+            <p><strong>Riek:</strong> Loved the movie and the booking process was smooth.</p>
+        </div>
+        <div class="review">
+            <p><strong>Pranav:</strong> Great movie! 10/10 would recommend.</p>
+        </div>
+    </div>
+    <footer id="contact">
+        <p>© 2024 Movie Booking. All rights reserved.</p>
+        <p>Contact us: info@moviebooking.com</p>
+    </footer>
+</body>
+</html>
